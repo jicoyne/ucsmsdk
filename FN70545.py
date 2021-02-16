@@ -1,6 +1,6 @@
 from ucsmsdk.ucshandle import UcsHandle
 
-handle = UcsHandle('10.201.27.108', 'jicoyne', 'password?') # change to match domain
+handle = UcsHandle('10.201.27.108', 'jicoyne', 'password?')
 
 handle.login()
 
@@ -13,3 +13,7 @@ for item in storage_resources:
         print(item.dn, item.device_version)
 
 handle.logout()
+
+#https://www.cisco.com/c/en/us/support/docs/field-notices/705/fn70545.html
+
+#https://bst.cloudapps.cisco.com/bugsearch/bug/CSCvt55829/?rfs=iqvred
